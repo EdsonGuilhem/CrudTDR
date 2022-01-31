@@ -1,7 +1,7 @@
 # CrudTDR
 Cadastro de Usuários
 
-Desenvolva uma aplicação WEB utilizando Javascript para o front-end (preferencialmente utilizando o framework Vue.js).
+Desenvolva uma aplicação WEB utilizando Javascript para o front-end (preferencialmente utilizando o framework <s>Vue.js</s> ReactJS).
 
 A aplicação deverá realizar as operações de um CRUD básico, listando as pessoas cadastradas, permitindo incluir, alterar e excluir os registros.
 
