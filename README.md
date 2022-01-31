@@ -1,13 +1,13 @@
 # CrudTDR
 Cadastro de Usuários
 
-# Introdução ao Create React App
+# Introdução ao App em  React 
 
-Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi inicializado com [NPX Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-No diretório do projeto, você pode executar:
+No diretório do projeto,em Front-end, você pode executar:
 
 ### `npm start`
 
