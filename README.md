@@ -1,6 +1,21 @@
 # CrudTDR
 Cadastro de Usuários
 
+# Introdução ao Create React App
+
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+No diretório do projeto, você pode executar:
+
+### `npm start`
+
+Executa o aplicativo no modo de desenvolvimento.
+
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo em seu navegador.
+
+
 Desenvolva uma aplicação WEB utilizando Javascript para o front-end (preferencialmente utilizando o framework <s>Vue.js</s> ReactJS).
 
 A aplicação deverá realizar as operações de um CRUD básico, listando as pessoas cadastradas, permitindo incluir, alterar e excluir os registros.
