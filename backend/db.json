@@ -1,13 +1,49 @@
 {
-    
-    "users": [{
-        "id": 1,
-        "name": "Arthur Oliveira",
-        "email": "aoliveira@gmail.com"
-    }, {
-        "id":2,
-        "name": "Maria Julia",
-        "email": "juliamaria@gmail.com"
-    }]
-
+  "users": [
+    {
+      "id": 1,
+      "name": "Arthur Oliveira",
+      "email": "aoliveira@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Maria Julia",
+      "email": "juliamaria@gmail.com"
+    },
+    {
+      "name": "Aline Castro",
+      "email": "alinecas@yahoo.com",
+      "id": 6
+    },
+    {
+      "name": "Edson Guilhem",
+      "email": "edson_guilhem@hotmail.com",
+      "id": 7
+    },
+    {
+      "name": "Pastel & Açaí d'Aurora",
+      "email": "alrora_contato@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "Gabrielly Stella Allana Brito",
+      "email": "gabriellybrito@alvesbarcelos.com",
+      "id": 9
+    },
+    {
+      "name": "Ester Mirella Louise Corte Real",
+      "email": "estermirellalouisecortereal@albap.com.br",
+      "id": 10
+    },
+    {
+      "name": "Caio Ruan Porto",
+      "email": "ccaioruanporto@vnews.com.br",
+      "id": 11
+    },
+    {
+      "name": "Isabelle Isadora Sales",
+      "email": "isabelleisadorasales@maorifilmes.com.br",
+      "id": 12
+    }
+  ]
 }
