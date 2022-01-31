@@ -28,10 +28,10 @@ Os campos devem seguir as validações abaixo:
 - Nome (String)
        - Não pode ser nulo
        - Até 60 caracteres
-- Nascimento (Date)
+- E-mail (String)
        - Não pode ser nulo
        - Não deve permitir datas posteriores a data atual.
-- CPF (String)
+- Número (String)
        - Não pode ser nulo
        - Deve possuir validação para CPF inválidos.  
 
