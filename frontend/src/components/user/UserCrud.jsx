@@ -10,7 +10,7 @@ const headerProps = {
 
 const baseUrl = 'http://localhost:3001/users'
 const initialState = {
-    user: {name: '', email: ''},
+    user: { name: '', email: '', numero: '' },
     list: []
 }
 
@@ -35,19 +35,19 @@ export default class UserCrud extends Component {
         axios[method](url, user)
             .then(resp => {
                 const list = this.getUpdatedList(resp.data)
-                this.setState({ user: initialState.user, list})
+                this.setState({ user: initialState.user, list })
             })
     }
 
-    getUpdatedList(user, add= true) {
+    getUpdatedList(user, add = true) {
         const list = this.state.list.filter(u => u.id !== user.id)
-        if(add) list.unshift(user)
+        if (add) list.unshift(user)
         return list
     }
 
     updateField(event) {
         const user = { ...this.state.user }
-        user[event.target.name] = event.target.value 
+        user[event.target.name] = event.target.value
         this.setState({ user })
     }
 
@@ -76,7 +76,19 @@ export default class UserCrud extends Component {
                                 placeholder="Digite o e-mail..." />
                         </div>
                     </div>
+
+                    <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Numero</label>
+                            <input type="" className="form-control"
+                                name="numero"
+                                value={this.state.user.numero}
+                                onChange={e => this.updateField(e)}
+                                placeholder="Digite o seu numero..." />
+                        </div>
+                    </div>
                 </div>
+
                 <hr />
                 <div className="row">
                     <div className="col-12 d-flex justify-content-end">
@@ -101,20 +113,21 @@ export default class UserCrud extends Component {
 
     remove(user) {
         axios.delete(`${baseUrl}/${user.id}`).then(resp => {
-            const list = this.getUpdatedList(user, false )
+            const list = this.getUpdatedList(user, false)
             this.setState({ list })
         })
-        
+
     }
 
     renderTable() {
-        return(
+        return (
             <table className="table mt-4">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Nome</th>
                         <th>E-mail</th>
+                        <th>Numero</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -132,6 +145,7 @@ export default class UserCrud extends Component {
                     <td>{user.id}</td>
                     <td>{user.name}</td>
                     <td>{user.email}</td>
+                    <td>{user.numero}</td>
                     <td>
                         <button className="btn btn-warning"
                             onClick={() => this.load(user)}>
@@ -151,8 +165,8 @@ export default class UserCrud extends Component {
     render() {
         return (
             <Main {...headerProps}>
-               {this.renderForm()}
-               {this.renderTable()}
+                {this.renderForm()}
+                {this.renderTable()}
             </Main>
         )
     }
